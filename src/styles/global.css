@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-blush: #FFF0F5;
+  --color-cream: #FDF2F8;
+  --color-brand: #C2185B;
+  --color-accent: #D81B60;
+  --color-deep: #AD1457;
+  --color-ink: #2B0A1A;
+}
+
+:root {
+  --bg: #FFF0F5;
+  --surface: #ffffff;
+  --surface-tone: #FCE4EC;
+  --ink: #2B0A1A;
+  --muted: #6B4A5A;
+  --accent: #D81B60;
+  --accent-deep: #AD1457;
+  --brand: #C2185B;
+  --margin: 24px;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+.hero-name {
+  font-size: clamp(80px, 18.5vw, 300px);
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+}
+
+::selection { background: #D81B60; color: white; }
+
+a { color: inherit; }
+a[href^="http"], a[href^="https"], a[href^="/"], a[href^="#"], a[href^="mailto"] { color: inherit; }
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #D81B60;
+  outline-offset: 3px;
+}
+
+img { background: #FCE4EC; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}

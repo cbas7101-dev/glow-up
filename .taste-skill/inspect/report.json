@@ -1,0 +1,1452 @@
+{
+ "url": "http://localhost:4321/",
+ "at": "2026-10-13T19:15:49.611Z",
+ "allow": [
+  "eyebrow"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.92,
+    0.94,
+    0.99,
+    0.37,
+    0.69,
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    0.94,
+    0.98
+   ],
+   "motion": {
+    "elements": 44,
+    "css": 0,
+    "transitions": 7,
+    "scripted": 37,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 9357,
+     "screens": 10.4,
+     "words": 487,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 30,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "banner.png",
+      "831532835_18117378274969299_6774431948201622192_",
+      "829762291_18117378220969299_7960367815238614785_",
+      "830434342_18117378202969299_4607416569557005457_",
+      "831616093_18117378178969299_7575594489838199786_",
+      "720191674_18106049719969299_8271465705683202574_",
+      "790476413_18114186895969299_8078544786992165141_",
+      "830754678_18117378241969299_7991617238924122363_"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Glow Up",
+     "words": 2,
+     "chars": 7,
+     "lines": 1,
+     "size": 266.4,
+     "vw": 18.5,
+     "font": "Fraunces",
+     "weight": 400,
+     "tracking": -0.05,
+     "leading": 0.85,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 749,
+     "tag": "h2",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Resaltamos tu belleza",
+     "words": 3,
+     "lines": 2,
+     "size": 74.9,
+     "font": "Fraunces"
+    },
+    "headings": [
+     {
+      "text": "Resaltamos tu belleza",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 156,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Glow Up",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 266.4,
+      "vw": 18.5,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Elige tu ritual",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1130,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Faciales",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1770,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Corporales",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.26,
+      "top": 1770,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Lashes y Brows",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.26,
+      "top": 1770,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "5 años resaltando tu belleza",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2186,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "El menú de la casa",
+      "words": 5,
+      "chars": 18,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 2835,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“Piel libre de manchas, sin irritación y suavecita todos los días.”",
+      "words": 11,
+      "chars": 67,
+      "lines": 2,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.37,
+      "top": 4127,
+      "tag": "blockquote",
+      "kind": "statement"
+     },
+     {
+      "text": "Escríbenos",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 4989,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Agenda",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.41,
+      "top": 5889,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Disfruta",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 6789,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Promociones de Locura del 3 al 20 de octubre",
+      "words": 9,
+      "chars": 44,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.63,
+      "top": 7760,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visítanos en Quito",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 8249,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Glow Up",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 172.8,
+      "vw": 12,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 9113,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 8,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Fraunces",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      17,
+      19,
+      24,
+      28,
+      30,
+      32,
+      40,
+      44,
+      48,
+      72,
+      75,
+      173,
+      216,
+      266
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 63,
+     "max": {
+      "size": 266.4,
+      "vw": 18.5,
+      "font": "Fraunces",
+      "text": "Glow Up"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.15,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Agenda tu cita",
+      "above": "Glow Up",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 17,
+      "top": 582
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff0f5",
+     "bodyBgHsl": {
+      "h": 340,
+      "s": 1,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fce4ec",
+       "top": 76,
+       "hsl": {
+        "h": 340,
+        "s": 0.8,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#fff0f5",
+       "top": 716,
+       "hsl": {
+        "h": 340,
+        "s": 1,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1050,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#2b0a1a",
+       "top": 3927,
+       "hsl": {
+        "h": 331,
+        "s": 0.62,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#c2185b",
+       "top": 7696,
+       "hsl": {
+        "h": 336,
+        "s": 0.78,
+        "l": 0.43
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b0a1a",
+       "share": 0.38
+      },
+      {
+       "color": "#6b4a5a",
+       "share": 0.29
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.28
+      },
+      {
+       "color": "#c2185b",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ad1457",
+      "hsl": {
+       "h": 334,
+       "s": 0.79,
+       "l": 0.38
+      },
+      "fg": "#2b0a1a"
+     },
+     "lowContrast": [
+      {
+       "text": "Agenda tu cita",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 17,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Escríbenos 099 990 0970",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Agenda tu cita",
+      "Agenda tu cita",
+      "Ver Promociones",
+      "Chat"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 9,
+     "roundedMedia": 5,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "fraunces",
+     "inter"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.97,
+    0.81,
+    0.97,
+    0.97,
+    0.97,
+    0.75,
+    0.41,
+    0.41,
+    0.97,
+    0.97,
+    0.97,
+    0.97
+   ],
+   "motion": {
+    "elements": 41,
+    "css": 0,
+    "transitions": 6,
+    "scripted": 35,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 391,
+     "h": 847
+    },
+    "page": {
+     "height": 12232,
+     "screens": 14.4,
+     "words": 481,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 30,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "banner.png",
+      "831532835_18117378274969299_6774431948201622192_",
+      "829762291_18117378220969299_7960367815238614785_",
+      "830434342_18117378202969299_4607416569557005457_",
+      "831616093_18117378178969299_7575594489838199786_",
+      "720191674_18106049719969299_8271465705683202574_",
+      "790476413_18114186895969299_8078544786992165141_",
+      "830754678_18117378241969299_7991617238924122363_"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Resaltamos tu belleza",
+     "words": 3,
+     "chars": 21,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "Fraunces",
+     "weight": 400,
+     "tracking": -0.03,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.87,
+     "top": 132,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Resaltamos tu belleza",
+     "words": 3,
+     "lines": 2,
+     "size": 44,
+     "font": "Fraunces"
+    },
+    "headings": [
+     {
+      "text": "Resaltamos tu belleza",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 132,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Glow Up",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 80,
+      "vw": 20.5,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1104,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Elige tu ritual",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1384,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Faciales",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1989,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Corporales",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 2607,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Lashes y Brows",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3226,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "5 años resaltando tu belleza",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3497,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "El menú de la casa",
+      "words": 5,
+      "chars": 18,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 4466,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Faciales premium",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.1,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 5074,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Láser diodo e hilo",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.1,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 5731,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Corporal y mirada",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.1,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 6131,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "“Piel libre de manchas, sin irritación y suavecita todos los días.”",
+      "words": 11,
+      "chars": 67,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.1,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 7210,
+      "tag": "blockquote",
+      "kind": "statement"
+     },
+     {
+      "text": "Escríbenos",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.4,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 7930,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Agenda",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.4,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 8774,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Disfruta",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.4,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 9618,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Promociones de Locura del 3 al 20 de octubre",
+      "words": 9,
+      "chars": 44,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 10474,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visítanos en Quito",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 11198,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Glow Up",
+      "words": 2,
+      "chars": 7,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.3,
+      "font": "Fraunces",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 12006,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 8,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Fraunces",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      17,
+      19,
+      24,
+      28,
+      30,
+      32,
+      40,
+      44,
+      60,
+      72,
+      80
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 80,
+      "vw": 20.5,
+      "font": "Fraunces",
+      "text": "Glow Up"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.16,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff0f5",
+     "bodyBgHsl": {
+      "h": 340,
+      "s": 1,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fce4ec",
+       "top": 76,
+       "hsl": {
+        "h": 340,
+        "s": 0.8,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1304,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#fff0f5",
+       "top": 4386,
+       "hsl": {
+        "h": 340,
+        "s": 1,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#2b0a1a",
+       "top": 6642,
+       "hsl": {
+        "h": 331,
+        "s": 0.62,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#c2185b",
+       "top": 10410,
+       "hsl": {
+        "h": 336,
+        "s": 0.78,
+        "l": 0.43
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b0a1a",
+       "share": 0.39
+      },
+      {
+       "color": "#6b4a5a",
+       "share": 0.29
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.27
+      },
+      {
+       "color": "#c2185b",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ad1457",
+      "hsl": {
+       "h": 334,
+       "s": 0.79,
+       "l": 0.38
+      },
+      "fg": "#2b0a1a"
+     },
+     "lowContrast": [
+      {
+       "text": "Menú",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Agenda tu cita",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 17,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Ver opciones",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      },
+      {
+       "text": "Escríbenos 099 990 0970",
+       "ratio": 2.6,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#2b0a1a",
+       "bg": "#ad1457"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Menú",
+      "Agenda tu cita",
+      "Ver Promociones",
+      "Chat"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 6,
+     "roundedMedia": 5,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "fraunces",
+     "inter"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Agenda tu cita\" 2.6:1 needs 4.5:1; \"Ver opciones\" 2.6:1 needs 4.5:1; \"Ver opciones\" 2.6:1 needs 4.5:1; \"Ver opciones\" 2.6:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "15 different font sizes (16, 17, 19, 24, 28, 30, 32, 40, 44, 48, 72, 75, 173, 216, 266).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\desktop-page-03.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\Users\\Gamer\\Desktop\\Documentos\\Rutiso\\Demos gratis\\glowup-web\\glowup-web\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ]
+  }
+ ]
+}
