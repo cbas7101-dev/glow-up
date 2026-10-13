@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Sparkles, Zap, Leaf, Eye, MessageCircle, MapPin, Phone, AtSign, Mail, ArrowRight, CalendarHeart, ChevronRight } from 'lucide-react';
+import { Sparkles, Zap, Leaf, Eye, MessageCircle, MapPin, Phone, AtSign, Mail, ArrowRight, CalendarHeart, ChevronRight, Check, Clock } from 'lucide-react';
 
 const WA = 'https://wa.me/593999900970';
 
@@ -74,10 +73,10 @@ export function Hero() {
       </div>
 
       <div className="bg-[#FFF0F5] px-6 pt-6 pb-10">
-        <h2 data-wordmark className="font-display hero-name text-[#C2185B] max-w-[1400px] mx-auto mt-2 select-none" aria-label="Glow Up">
+        <h2 data-wordmark className="font-display hero-name text-[#C2185B] text-center w-full mx-auto mt-2 select-none" style={{ fontSize: 'clamp(56px,12vw,188px)' }} aria-label="Glow Up">
           Glow Up
         </h2>
-        <div className="max-w-[1400px] mx-auto mt-3 flex flex-wrap gap-x-8 gap-y-2 text-[16px] text-[#6B4A5A]">
+        <div className="max-w-[1400px] mx-auto mt-3 flex flex-wrap justify-center gap-x-8 gap-y-2 text-[16px] text-[#6B4A5A] text-center">
           <span className="inline-flex items-center gap-2"><CalendarHeart size={17} /> 5 años contigo · Promociones del 3 al 20 de octubre</span>
           <span className="inline-flex items-center gap-2"><MapPin size={17} /> Jaime Albuja y Av. Real Audiencia, Quito</span>
         </div>
@@ -103,7 +102,7 @@ export function Categories() {
               <img src={c.img} alt={c.alt} className="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
               <p className="font-display mt-5" style={{ fontSize: '30px' }}>{c.name}</p>
               <p className="text-[16px] text-[#6B4A5A] mt-1">{c.desc}</p>
-              <a href="#servicios" className="mt-4 inline-block bg-[#AD1457] hover:bg-[#8E0E47] text-white px-7 py-2.5 rounded-full font-semibold text-[16px] transition-colors">Ver opciones</a>
+              <a href="#servicios" className="mt-4 inline-block border-2 border-[#AD1457] text-[#AD1457] hover:bg-[#AD1457] hover:text-white px-7 py-2.5 rounded-full font-semibold text-[16px] transition-colors">Ver opciones</a>
             </div>
           ))}
         </div>
@@ -215,6 +214,7 @@ export function Proof() {
             “Piel libre de manchas, sin irritación y suavecita todos los días.”
           </blockquote>
           <p className="mt-8 text-[16px] opacity-80">Láser diodo · Primera sesión → Tercera sesión · @glowupspaquito</p>
+          <img src="/834200252_18117378196969299_7524844920960682544_n.jpg" alt="Depilación con hilo y láser diodo en promo" className="mt-8 w-full max-w-[380px] aspect-[4/5] object-cover" loading="lazy" />
           <a href={WA} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 bg-[#AD1457] hover:bg-[#8E0E47] text-white px-7 py-3 rounded-full font-semibold transition-colors">Quiero este resultado <ArrowRight size={18} /></a>
         </div>
       </div>
@@ -224,67 +224,76 @@ export function Proof() {
 
 export function Steps() {
   const steps = [
-    { verb: 'Escríbenos', text: 'Mensaje directo o WhatsApp al 099 990 0970. Te respondemos hoy.', img: '/830754678_18117378241969299_7991617238924122363_n.jpg', pos: '50% 30%' },
-    { verb: 'Agenda', text: 'Valoración gratuita con anticipación. Sin espera, sin filas.', img: '/834200252_18117378196969299_7524844920960682544_n.jpg', pos: '50% 35%' },
-    { verb: 'Disfruta', text: 'Trato especializado y olvídate del retoque diario.', img: '/831616093_18117378178969299_7575594489838199786_n.jpg', pos: '50% 30%' },
+    { verb: 'Escríbenos', text: 'Mensaje directo o WhatsApp al 099 990 0970. Te respondemos hoy.', bg: 'bg-[#2B0A1A]', fg: 'text-white' },
+    { verb: 'Agenda', text: 'Valoración gratuita con anticipación. Sin espera, sin filas.', bg: 'bg-white', fg: 'text-[#2B0A1A]' },
+    { verb: 'Disfruta', text: 'Trato especializado y olvídate del retoque diario.', bg: 'bg-[#C2185B]', fg: 'text-white' },
   ];
   return (
-    <section id="proceso" className="bg-[#FFF0F5]">
+    <section id="proceso" aria-label="Cómo funciona">
       {steps.map((s) => (
-        <div key={s.verb} className="relative h-[100svh] overflow-hidden flex items-center justify-center">
-          <img src={s.img} alt={s.verb} className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: s.pos }} loading="lazy" />
-          <div className="absolute inset-0 bg-black/60" aria-hidden />
-          <h2 data-reveal className="relative font-display text-white text-center" style={{ fontSize: 'clamp(72px,15vw,240px)' }}>{s.verb}</h2>
-          <p className="absolute bottom-8 left-6 right-6 md:left-10 text-white text-[17px] max-w-[52ch]">{s.text}</p>
+        <div key={s.verb} className={`${s.bg} px-6 py-14 md:py-20`}>
+          <div className="max-w-[1100px] mx-auto grid md:grid-cols-[1fr_320px] gap-4 md:gap-10 items-end">
+            <h2 data-reveal className={`font-display ${s.fg}`} style={{ fontSize: 'clamp(56px,9vw,132px)', lineHeight: 0.95 }}>{s.verb}</h2>
+            <p data-reveal className={`${s.fg} text-[17px] leading-relaxed max-w-[40ch] opacity-90 md:pb-3`}>{s.text}</p>
+          </div>
         </div>
       ))}
     </section>
   );
 }
 
-const PICKER = [
-  { id: 'glass', name: 'Glass Skin Repair', price: '$39' },
-  { id: 'laser', name: 'Láser Axilas + Bikini', price: '$15' },
-  { id: 'masaje', name: 'Masaje relajante', price: '$17.99' },
-  { id: 'lashes', name: 'Lifting + Laminado', price: '$9.99' },
-  { id: 'bbglow', name: 'BB Glow', price: '$17.99' },
+const PACKAGES = [
+  {
+    name: 'Ritual Glass Skin',
+    price: '$39',
+    tag: 'Facial premium con exosomas',
+    includes: ['Limpieza profunda', 'Extracción de impurezas', 'Exosomas regenerativos', 'Hidratación intensiva'],
+  },
+  {
+    name: 'Dúo Láser Diodo',
+    price: '$15',
+    tag: 'Axilas + Bikini o Media pierna + Axilas',
+    includes: ['Las dos zonas a elegir', 'Adiós irritación y foliculitis', 'Piel sin manchas'],
+  },
+  {
+    name: 'Mirada Total',
+    price: '$9.99',
+    tag: 'Por servicio · hilo desde $3.99',
+    includes: ['Lifting de pestañas', 'Brow lamination', 'Depilación con hilo'],
+  },
 ];
 
 export function Promos() {
-  const [sel, setSel] = useState(PICKER[0]);
-  const link = `${WA}?text=${encodeURIComponent(`Hola Glow Up, quiero agendar ${sel.name} (${sel.price}) por la promo de aniversario`)}`;
   return (
     <section id="promociones" className="bg-white">
-      <div className="grid grid-cols-3 h-[40svh] min-h-[280px]">
-        <img src="/831532835_18117378274969299_6774431948201622192_n.jpg" alt="Promo faciales y rejuvenecimiento" className="h-full w-full object-cover" style={{ objectPosition: '50% 30%' }} loading="lazy" />
-        <img src="/829762291_18117378220969299_7960367815238614785_n.jpg" alt="Promo corporales y masajes" className="h-full w-full object-cover" style={{ objectPosition: '50% 38%' }} loading="lazy" />
-        <img src="/830434342_18117378202969299_4607416569557005457_n.jpg" alt="Promo lashes y brows" className="h-full w-full object-cover" style={{ objectPosition: '50% 30%' }} loading="lazy" />
+      <div className="bg-[#C2185B] text-white px-6 py-12 text-center">
+        <h2 data-reveal className="font-display" style={{ fontSize: 'clamp(32px,4vw,56px)', lineHeight: 1.05 }}>Promociones de la casa</h2>
+        <p data-reveal className="mt-3 text-[17px] opacity-90">De aniversario · del 3 al 20 de octubre · con previa cita</p>
       </div>
-      <div className="bg-[#C2185B] text-white px-6 py-16">
-        <div className="max-w-[900px] mx-auto">
-          <div data-reveal>
-            <h2 className="font-display" style={{ fontSize: 'clamp(28px,3vw,40px)', lineHeight: 1.15 }}>
-              Promociones de Locura del <span className="underline decoration-[4px] underline-offset-[6px]"><a href={link} target="_blank" rel="noreferrer">3 al 20 de octubre</a></span>
-            </h2>
-            <p className="mt-4 text-[17px] opacity-90">Faciales, BB Glow $17.99, Plasma $18.99, hilo y láser. Elige tu tratamiento:</p>
-            <div className="mt-6 flex flex-wrap gap-3" role="group" aria-label="Elige tratamiento">
-              {PICKER.map((p) => (
-                <button
-                  key={p.id}
-                  onClick={() => setSel(p)}
-                  aria-pressed={sel.id === p.id}
-                  className={`px-5 py-2.5 rounded-full text-[16px] font-semibold transition-colors ${sel.id === p.id ? 'bg-white text-[#C2185B]' : 'bg-white/15 text-white hover:bg-white/25'}`}
-                >
-                  {p.name} · {p.price}
-                </button>
-              ))}
-            </div>
-            <a href={link} target="_blank" rel="noreferrer" className="mt-7 inline-flex items-center gap-2 bg-white text-[#C2185B] px-7 py-3.5 rounded-full font-semibold text-[17px]">
-              Agendar {sel.name} {sel.price} <ArrowRight size={18} />
-            </a>
-            <p className="mt-4 text-[16px] opacity-75">Sin backend: el botón abre WhatsApp con tu elección escrita.</p>
-          </div>
+      <div className="px-6 py-16 bg-[#FFF0F5]">
+        <div className="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-8">
+          {PACKAGES.map((pkg) => {
+            const link = `${WA}?text=${encodeURIComponent(`Hola Glow Up, quiero agendar ${pkg.name} (${pkg.price}) por la promo de aniversario`)}`;
+            return (
+              <article key={pkg.name} data-reveal className="bg-[#2B0A1A] text-white rounded-3xl p-8 flex flex-col">
+                <p className="font-display" style={{ fontSize: '32px', lineHeight: 1.1 }}>{pkg.name}</p>
+                <p className="mt-1 text-[16px] opacity-80">{pkg.tag}</p>
+                <p className="mt-6 font-bold" style={{ fontSize: '56px', lineHeight: 1 }}><span className="align-top" style={{ fontSize: '24px' }}>$</span>{pkg.price.replace('$', '')}</p>
+                <ul className="mt-6 space-y-3 text-[16px]">
+                  {pkg.includes.map((inc) => (
+                    <li key={inc} className="flex items-start gap-2.5">
+                      <Check size={18} className="text-[#F48FB1] shrink-0 mt-0.5" /> <span>{inc}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href={link} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center justify-center gap-2 bg-white text-[#C2185B] px-6 py-3 rounded-full font-semibold text-[16px] transition-colors">
+                  Agendar {pkg.price} <ArrowRight size={17} />
+                </a>
+              </article>
+            );
+          })}
         </div>
+        <p data-reveal className="text-center text-[16px] text-[#6B4A5A] mt-10">¿Buscas otro servicio? Mira el menú completo arriba y escríbenos por WhatsApp.</p>
       </div>
     </section>
   );
@@ -294,9 +303,13 @@ export function ContactFooter() {
   return (
     <footer id="contacto" className="relative">
       <img src="/830754678_18117378241969299_7991617238924122363_n.jpg" alt="La cabina de Glow Up SPA te espera en Quito" className="h-[100svh] min-h-[640px] w-full object-cover" style={{ objectPosition: '50% 75%' }} loading="lazy" />
-      <div className="absolute top-[60px] right-6 md:right-[60px] w-[min(380px,calc(100%-48px))] bg-[#FFF0F5] rounded-lg p-8">
-        <h2 className="text-[28px] font-semibold">Visítanos en Quito</h2>
-        <address className="not-italic mt-4 text-[16px] leading-relaxed">
+      <div className="absolute top-[60px] right-6 md:right-[60px] w-[min(400px,calc(100%-48px))] bg-[#FFF0F5] rounded-lg p-8">
+        <h2 className="text-[28px] font-semibold">Contáctanos</h2>
+        <p className="mt-1 text-[16px] text-[#6B4A5A]">Reserva con anticipación por DM o WhatsApp.</p>
+        <h3 className="mt-6 text-[16px] font-bold tracking-wide flex items-center gap-2"><Clock size={16} /> Horarios de atención</h3>
+        <p className="mt-1 text-[16px]">Lunes a sábado · con cita previa</p>
+        <h3 className="mt-6 text-[16px] font-bold tracking-wide">Visítanos en Quito</h3>
+        <address className="not-italic mt-1 text-[16px] leading-relaxed">
           Jaime Albuja y Av. Real Audiencia<br />Quito, Ecuador
         </address>
         <div className="mt-4 text-[16px] space-y-1 tabular-nums">
