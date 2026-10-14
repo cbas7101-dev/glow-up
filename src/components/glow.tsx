@@ -1,30 +1,73 @@
-import { Sparkles, Zap, Leaf, Eye, MessageCircle, MapPin, Phone, AtSign, Mail, ArrowRight, CalendarHeart, ChevronRight, Check, Clock } from 'lucide-react';
+import { Sparkles, Zap, Leaf, Eye, MessageCircle, MapPin, Phone, AtSign, Mail, ArrowRight, CalendarHeart, Check, Clock, Home } from 'lucide-react';
 
-const WA = 'https://wa.me/593999900970';
+const WA_NUMBER = '593999900970';
+const WA = `https://wa.me/${WA_NUMBER}`;
+const waLink = (msg: string) => `${WA}?text=${encodeURIComponent(msg)}`;
+const WA_GENERAL = waLink('Hola Glow Up, quiero agendar una cita');
 
-/* Mapa de imágenes — cada pieza tiene un hogar:
-   banner.png → Hero (presentación de marca) · logo.jpg → nav/footer
-   faciales 831532835 / corporales 829762291 / lashes 830434342 → Categorías
-   fiesta 831616093 → Fiesta 5 años (+ panel Disfruta) · glass 720191674 → Menú
-   antes/después 790476413 → Resultados · agenda 830754678 → Escríbenos + Contacto
-   depilación 834200252 → panel Agenda · strip Promos = resumen de categorías */
+const ADDRESS = 'Jaime Albuja y Av. Real Audiencia, Quito';
+const PHONES = '099 990 0970 · 099 804 6299';
+const HOURS = 'Lun–Sáb · con cita previa';
+const MAPS_QUERY = encodeURIComponent('Jaime Albuja y Av. Real Audiencia, Quito, Ecuador');
+
+/* Mapa de imágenes:
+   banner.png → Hero · logo.jpg → nav/footer
+   faciales / corporales / lashes → Categorías
+   glass → Menú · agenda → Contacto (ya no es fondo) */
 
 export function Navbar() {
   return (
-    <nav className="relative z-30 flex items-center justify-between px-6 py-4 bg-[#2B0A1A]">
-      <a href="#inicio" className="flex items-center gap-3">
-        <img src="/logo.jpg" alt="Glow Up SPA" className="h-11 w-11 rounded-full object-cover" width={44} height={44} />
-        <span className="text-white text-[17px] font-semibold tracking-tight">Glow Up SPA · Boutique</span>
-      </a>
-      <div className="hidden md:flex items-center gap-8 text-white text-[16px] font-medium">
-        <a className="hover:opacity-80" href="#categorias">Categorías</a>
-        <a className="hover:opacity-80" href="#servicios">Servicios</a>
-        <a className="hover:opacity-80" href="#resultados">Resultados</a>
-        <a className="hover:opacity-80" href="#promociones">Promociones</a>
-        <a href={WA} target="_blank" rel="noreferrer" className="bg-[#AD1457] hover:bg-[#8E0E47] text-white px-5 py-2.5 rounded-full font-semibold transition-colors">Agenda tu cita</a>
+    <div className="sticky top-0 z-30 shadow-[0_1px_0_rgba(43,10,26,0.08),0_8px_24px_-12px_rgba(43,10,26,0.25)]">
+      {/* Barra superior profesional */}
+      <div className="bg-[#2B0A1A] text-white/85">
+        <div className="max-w-[1300px] mx-auto px-6 py-2 flex flex-wrap items-center justify-center lg:justify-between gap-x-10 gap-y-1 text-[13.5px]">
+          <a href={waLink('Hola Glow Up, quiero información')} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-white">
+            <Phone size={14} className="shrink-0" /> 099 990 0970 · 099 804 6299
+          </a>
+          <span className="hidden md:inline-flex items-center gap-2">
+            <Home size={14} className="shrink-0" /> Jaime Albuja y Av. Real Audiencia · Quito - Ecuador
+          </span>
+          <span className="hidden sm:inline-flex items-center gap-2">
+            <Clock size={14} className="shrink-0" /> Lunes a sábado · con cita previa
+          </span>
+        </div>
       </div>
-      <a href="#contacto" className="md:hidden text-white text-[16px] font-semibold bg-[#AD1457] px-4 py-2 rounded-full">Menú</a>
-    </nav>
+      {/* Barra principal */}
+      <nav className="bg-white/95 backdrop-blur">
+        <div className="max-w-[1300px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+          <a href="#inicio" className="flex items-center gap-3 min-w-0">
+            <img src="/logo.jpg" alt="Glow Up SPA" className="h-12 w-12 rounded-full object-cover shrink-0" width={48} height={48} />
+            <span className="leading-none">
+              <span className="font-display block text-[22px] tracking-[0.18em] text-[#2B0A1A]">GLOW UP</span>
+              <span className="block text-[11px] tracking-[0.32em] text-[#6B4A5A] mt-1">SPA · BOUTIQUE</span>
+            </span>
+          </a>
+          <div className="hidden lg:flex items-center gap-8 text-[#2B0A1A] text-[16px] font-medium">
+            <a className="hover:text-[#AD1457]" href="#inicio">Inicio</a>
+            <a className="hover:text-[#AD1457]" href="#categorias">Categorías</a>
+            <a className="hover:text-[#AD1457]" href="#servicios">Servicios</a>
+            <a className="hover:text-[#AD1457]" href="#promociones">Promociones</a>
+            <a className="hover:text-[#AD1457]" href="#contacto">Contacto</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#C9A86A] hover:bg-[#B8945A] text-[#2B0A1A] px-5 py-2.5 rounded-md font-semibold text-[15px] transition-colors whitespace-nowrap">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18" /></svg>
+              Reservar cita
+            </a>
+          </div>
+        </div>
+        {/* Links móviles con scroll horizontal */}
+        <div className="lg:hidden border-t border-[#F3D9E3]">
+          <div className="max-w-[1300px] mx-auto px-6 py-2.5 flex gap-6 overflow-x-auto text-[15px] font-medium text-[#2B0A1A] whitespace-nowrap">
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 }
 
@@ -36,9 +79,9 @@ export function Hero() {
     'Promociones de aniversario del 3 al 20 de octubre',
   ];
   return (
-    <header id="inicio" className="relative bg-[#FCE4EC]">
+    <header id="inicio" className="relative bg-[#FCE4EC] overflow-hidden">
       <div className="max-w-[1300px] mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div>
+        <div className="min-w-0">
           <h1 data-reveal className="font-display text-[#2B0A1A]" style={{ fontSize: 'clamp(44px,5.2vw,76px)', lineHeight: 1.02 }}>
             Resaltamos tu belleza
           </h1>
@@ -48,12 +91,12 @@ export function Hero() {
           <ul data-reveal className="mt-7 space-y-2.5 text-[17px] font-medium">
             {points.map((p) => (
               <li key={p} className="flex items-start gap-2">
-                <ChevronRight size={19} className="text-[#D81B60] shrink-0 mt-0.5" /> <span>{p}</span>
+                <ArrowRight size={19} className="text-[#D81B60] shrink-0 mt-0.5" /> <span>{p}</span>
               </li>
             ))}
           </ul>
           <div data-reveal className="mt-8 flex flex-wrap gap-3">
-            <a href={WA} target="_blank" rel="noreferrer" className="bg-[#AD1457] hover:bg-[#8E0E47] text-white px-7 py-3.5 rounded-full font-semibold text-[17px] transition-colors inline-flex items-center gap-2">
+            <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="bg-[#AD1457] hover:bg-[#8E0E47] text-white px-7 py-3.5 rounded-full font-semibold text-[17px] transition-colors inline-flex items-center gap-2">
               Agenda tu cita <ArrowRight size={18} />
             </a>
             <a href="#promociones" className="bg-white text-[#C2185B] px-7 py-3.5 rounded-full font-semibold text-[17px] transition-colors inline-flex items-center">
@@ -61,7 +104,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div data-reveal>
+        <div data-reveal className="min-w-0">
           <img
             src="/banner.png"
             alt="Glow Up SPA Make Up Boutique — cejas y pestañas, masajes, faciales y pigmentación de labios"
@@ -72,13 +115,13 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="bg-[#FFF0F5] px-6 pt-6 pb-10">
-        <h2 data-wordmark className="font-display hero-name text-[#C2185B] text-center w-full mx-auto mt-2 select-none" style={{ fontSize: 'clamp(56px,12vw,188px)' }} aria-label="Glow Up">
+      <div className="bg-[#FFF0F5] px-6 pt-6 pb-10 overflow-hidden">
+        <h2 data-wordmark className="font-display text-[#C2185B] text-center mx-auto mt-2 select-none max-w-full" style={{ fontSize: 'clamp(48px,10vw,168px)', lineHeight: 0.95, whiteSpace: 'normal', overflowWrap: 'break-word' }} aria-label="Glow Up">
           Glow Up
         </h2>
-        <div className="max-w-[1400px] mx-auto mt-3 flex flex-wrap justify-center gap-x-8 gap-y-2 text-[16px] text-[#6B4A5A] text-center">
-          <span className="inline-flex items-center gap-2"><CalendarHeart size={17} /> 5 años contigo · Promociones del 3 al 20 de octubre</span>
-          <span className="inline-flex items-center gap-2"><MapPin size={17} /> Jaime Albuja y Av. Real Audiencia, Quito</span>
+        <div className="max-w-[1100px] mx-auto mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-8 text-[15.5px] text-[#6B4A5A] text-center px-2">
+          <span className="inline-flex items-center justify-center gap-2 max-w-full"><CalendarHeart size={17} className="shrink-0" /> <span>5 años contigo · Promociones del 3 al 20 de octubre</span></span>
+          <span className="inline-flex items-center justify-center gap-2 max-w-full"><MapPin size={17} className="shrink-0" /> <span>Jaime Albuja y Av. Real Audiencia, Quito</span></span>
         </div>
       </div>
     </header>
@@ -111,33 +154,11 @@ export function Categories() {
   );
 }
 
-export function Fiesta() {
-  return (
-    <section className="bg-white py-16 px-6">
-      <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <div data-reveal>
-          <h2 className="font-display text-[#2B0A1A] mt-3" style={{ fontSize: 'clamp(40px,5vw,72px)' }}>5 años resaltando tu belleza</h2>
-          <p className="text-[17px] text-[#C2185B] font-semibold mt-4">¡Hoy Glow Up está de fiesta! Gracias por estos 5 años contigo.</p>
-          <p className="text-[19px] leading-relaxed mt-5 max-w-[52ch]">
-            Resultados que hablan por sí solos: piel visiblemente más clara, suavecita y libre de vello desde las primeras sesiones.
-          </p>
-          <div className="mt-7 flex gap-3">
-            <a href={WA} className="bg-[#AD1457] hover:bg-[#8E0E47] text-white px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2"><MessageCircle size={18} /> Escríbenos 099 990 0970</a>
-          </div>
-        </div>
-        <div data-reveal>
-          <img src="/831616093_18117378178969299_7575594489838199786_n.jpg" alt="Fiesta de aniversario: 5 años de Glow Up contigo" className="w-full h-auto object-cover rounded-3xl" loading="lazy" />
-        </div>
-      </div>
-    </section>
-  );
-}
-
 const MENU = [
   {
     group: 'Faciales premium',
     items: [
-      { name: 'Glass Skin Repair + Exosomas', desc: 'Limpieza profunda, extracción, hidratación intensiva. Efecto piel de porcelana.', price: '$39', icon: Sparkles, photo: '/720191674_18106049719969299_8271465705683202574_n.jpg' },
+      { name: 'Glass Skin Repair + Exosomas', desc: 'Limpieza profunda, extracción, hidratación intensiva. Efecto piel de porcelana.', price: '$39', icon: Sparkles },
       { name: 'Limpieza Facial', desc: 'Renueva, ilumina y afina poros.', price: '$14.99', icon: Sparkles },
       { name: 'Mascarilla Hidroplástica', desc: 'Hidratación choque para eventos.', price: '$14.99', icon: Sparkles },
       { name: 'BB Glow', desc: 'Tono uniforme y glow inmediato.', price: '$17.99', icon: Sparkles },
@@ -168,54 +189,41 @@ const MENU = [
 
 export function ServicesMenu() {
   return (
-    <section id="servicios" className="bg-[#FFF0F5] px-6 py-20">
-      <div className="max-w-[1300px] mx-auto grid md:grid-cols-[280px_1fr] gap-12">
-        <div data-reveal>
-          <h2 className="font-display" style={{ fontSize: 'clamp(32px,3.5vw,44px)' }}>El menú de la casa</h2>
-          <p className="text-[17px] text-[#6B4A5A] mt-4 leading-relaxed">Precios claros, trato especializado. Elige y agenda por WhatsApp.</p>
-          <img src="/720191674_18106049719969299_8271465705683202574_n.jpg" alt="Glass Skin Repair con exosomas, el facial estrella de la casa" className="mt-8 w-full aspect-[4/5] object-cover" loading="lazy" />
+    <section id="servicios" className="bg-[#FFF0F5] px-6 py-14">
+      <div className="max-w-[1200px] mx-auto">
+        <div data-reveal className="flex flex-col md:flex-row md:items-end gap-4 md:gap-8">
+          <div className="flex-1 min-w-0">
+            <h2 className="font-display" style={{ fontSize: 'clamp(28px,3vw,38px)' }}>El menú de la casa</h2>
+            <p className="text-[15.5px] text-[#6B4A5A] mt-2 leading-relaxed max-w-[62ch]">Precios claros, trato especializado. Cada servicio se agenda directo por WhatsApp.</p>
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <img src="/720191674_18106049719969299_8271465705683202574_n.jpg" alt="Glass Skin Repair con exosomas" className="h-16 w-16 rounded-xl object-cover" loading="lazy" />
+            <p className="text-[13px] text-[#6B4A5A] leading-tight">Facial estrella<br /><span className="font-bold text-[#2B0A1A]">Glass Skin $39</span></p>
+          </div>
         </div>
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
+        <div className="mt-8 grid md:grid-cols-3 gap-4 items-start">
           {MENU.map((g) => (
-            <div key={g.group} data-reveal>
-              <h3 className="text-[24px] font-semibold text-[#C2185B]">{g.group}</h3>
-              <div className="mt-6 space-y-[22px]">
-                {g.items.map((it) => (
-                  <div key={it.name} className="flex justify-between gap-6 items-baseline">
-                    <div className="min-w-0">
-                      <p className="text-[19px] font-medium flex items-center gap-2"><it.icon size={18} className="text-[#D81B60] shrink-0" /> {it.name}</p>
-                      <p className="text-[16px] text-[#6B4A5A] mt-1 max-w-[36ch]">{it.desc}</p>
+            <div key={g.group} data-reveal className="bg-white/60 border border-[#F3D9E3] rounded-2xl p-5 min-w-0">
+              <h3 className="text-[17px] font-bold text-[#C2185B]">{g.group}</h3>
+              <div className="mt-3 space-y-3">
+                {g.items.map((it) => {
+                  const link = waLink(`Hola Glow Up, quiero agendar ${it.name} (${it.price})`);
+                  return (
+                    <div key={it.name} className="bg-white border border-[#F6DDE7] rounded-xl p-3">
+                      <div className="flex justify-between gap-2 items-start">
+                        <p className="text-[14.5px] font-semibold flex items-start gap-1.5 leading-snug min-w-0"><it.icon size={15} className="text-[#D81B60] shrink-0 mt-0.5" /> <span>{it.name}</span></p>
+                        <span className="text-[14.5px] font-bold tabular-nums whitespace-nowrap">{it.price}</span>
+                      </div>
+                      <p className="text-[13px] text-[#6B4A5A] mt-1 leading-snug">{it.desc}</p>
+                      <a href={link} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1.5 bg-[#AD1457] hover:bg-[#8E0E47] text-white px-3.5 py-1.5 rounded-full font-bold text-[12.5px] transition-colors">
+                        <MessageCircle size={13} className="text-white" /> <span className="text-white">Agendar {it.price}</span>
+                      </a>
                     </div>
-                    <span className="text-[19px] font-semibold tabular-nums whitespace-nowrap">{it.price}</span>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function Proof() {
-  return (
-    <section id="resultados" className="bg-[#2B0A1A] text-white px-6 py-20">
-      <div className="max-w-[1300px] mx-auto grid md:grid-cols-12 gap-8 items-start">
-        <img
-          data-reveal
-          src="/790476413_18114186895969299_8078544786992165141_n.jpg"
-          alt="Resultado láser diodo: antes y después"
-          className="md:col-span-4 w-full aspect-[3/4] object-cover"
-          loading="lazy"
-        />
-        <div className="md:col-span-8 md:pt-[120px]" data-reveal>
-          <blockquote className="font-display" style={{ fontSize: 'clamp(24px,2.2vw,32px)', lineHeight: 1.25, maxWidth: '26ch' }}>
-            “Piel libre de manchas, sin irritación y suavecita todos los días.”
-          </blockquote>
-          <p className="mt-8 text-[16px] opacity-80">Láser diodo · Primera sesión → Tercera sesión · @glowupspaquito</p>
-          <img src="/834200252_18117378196969299_7524844920960682544_n.jpg" alt="Depilación con hilo y láser diodo en promo" className="mt-8 w-full max-w-[380px] aspect-[4/5] object-cover" loading="lazy" />
-          <a href={WA} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 bg-[#AD1457] hover:bg-[#8E0E47] text-white px-7 py-3 rounded-full font-semibold transition-colors">Quiero este resultado <ArrowRight size={18} /></a>
         </div>
       </div>
     </section>
@@ -270,24 +278,24 @@ export function Promos() {
         <h2 data-reveal className="font-display" style={{ fontSize: 'clamp(32px,4vw,56px)', lineHeight: 1.05 }}>Promociones de la casa</h2>
         <p data-reveal className="mt-3 text-[17px] opacity-90">De aniversario · del 3 al 20 de octubre · con previa cita</p>
       </div>
-      <div className="px-6 py-16 bg-[#FFF0F5]">
-        <div className="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-8">
+      <div className="px-6 py-14 bg-[#FFF0F5]">
+        <div className="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-5 items-stretch">
           {PACKAGES.map((pkg) => {
-            const link = `${WA}?text=${encodeURIComponent(`Hola Glow Up, quiero agendar ${pkg.name} (${pkg.price}) por la promo de aniversario`)}`;
+            const link = waLink(`Hola Glow Up, quiero agendar ${pkg.name} (${pkg.price}) por la promo de aniversario`);
             return (
-              <article key={pkg.name} data-reveal className="bg-[#2B0A1A] text-white rounded-3xl p-8 flex flex-col">
-                <p className="font-display" style={{ fontSize: '32px', lineHeight: 1.1 }}>{pkg.name}</p>
-                <p className="mt-1 text-[16px] opacity-80">{pkg.tag}</p>
-                <p className="mt-6 font-bold" style={{ fontSize: '56px', lineHeight: 1 }}><span className="align-top" style={{ fontSize: '24px' }}>$</span>{pkg.price.replace('$', '')}</p>
-                <ul className="mt-6 space-y-3 text-[16px]">
+              <article key={pkg.name} data-reveal className="bg-[#2B0A1A] text-white rounded-2xl p-7 flex flex-col h-full border border-white/10 shadow-[0_20px_50px_-20px_rgba(43,10,26,0.6)]">
+                <p className="font-display min-h-[40px] text-white" style={{ fontSize: '26px', lineHeight: 1.15 }}>{pkg.name}</p>
+                <p className="mt-1 text-[14px] text-white/70 min-h-[42px]">{pkg.tag}</p>
+                <p className="mt-3 font-bold tabular-nums text-white" style={{ fontSize: '48px', lineHeight: 1 }}><span className="align-top" style={{ fontSize: '22px' }}>$</span>{pkg.price.replace('$', '')}</p>
+                <ul className="mt-5 space-y-2.5 text-[14.5px] text-white/90 flex-1 border-t border-white/10 pt-5">
                   {pkg.includes.map((inc) => (
                     <li key={inc} className="flex items-start gap-2.5">
-                      <Check size={18} className="text-[#F48FB1] shrink-0 mt-0.5" /> <span>{inc}</span>
+                      <Check size={17} className="text-[#F48FB1] shrink-0 mt-0.5" strokeWidth={3} /> <span>{inc}</span>
                     </li>
                   ))}
                 </ul>
-                <a href={link} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center justify-center gap-2 bg-white text-[#C2185B] px-6 py-3 rounded-full font-semibold text-[16px] transition-colors">
-                  Agendar {pkg.price} <ArrowRight size={17} />
+                <a href={link} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center justify-center gap-2 bg-[#AD1457] hover:bg-[#C2185B] text-white px-6 py-3 rounded-full font-bold text-[15px] transition-colors w-full shadow-lg">
+                  <MessageCircle size={17} className="shrink-0" strokeWidth={2.5} /> Agendar {pkg.price}
                 </a>
               </article>
             );
@@ -301,34 +309,91 @@ export function Promos() {
 
 export function ContactFooter() {
   return (
-    <footer id="contacto" className="relative">
-      <img src="/830754678_18117378241969299_7991617238924122363_n.jpg" alt="La cabina de Glow Up SPA te espera en Quito" className="h-[100svh] min-h-[640px] w-full object-cover" style={{ objectPosition: '50% 75%' }} loading="lazy" />
-      <div className="absolute top-[60px] right-6 md:right-[60px] w-[min(400px,calc(100%-48px))] bg-[#FFF0F5] rounded-lg p-8">
-        <h2 className="text-[28px] font-semibold">Contáctanos</h2>
-        <p className="mt-1 text-[16px] text-[#6B4A5A]">Reserva con anticipación por DM o WhatsApp.</p>
-        <h3 className="mt-6 text-[16px] font-bold tracking-wide flex items-center gap-2"><Clock size={16} /> Horarios de atención</h3>
-        <p className="mt-1 text-[16px]">Lunes a sábado · con cita previa</p>
-        <h3 className="mt-6 text-[16px] font-bold tracking-wide">Visítanos en Quito</h3>
-        <address className="not-italic mt-1 text-[16px] leading-relaxed">
-          Jaime Albuja y Av. Real Audiencia<br />Quito, Ecuador
-        </address>
-        <div className="mt-4 text-[16px] space-y-1 tabular-nums">
-          <p className="flex items-center gap-2"><Phone size={16} /> 099 990 0970 · 099 804 6299</p>
-          <p className="flex items-center gap-2"><AtSign size={16} /> @glowupspaquito</p>
-          <p className="flex items-center gap-2"><Mail size={16} /> glow.up.spa1@gmail.com</p>
-          <p className="flex items-center gap-2"><MapPin size={16} /> Lun–Sáb · con cita previa</p>
+    <>
+      <section id="contacto" className="bg-[#2B0A1A] text-white px-6 py-16 md:py-20">
+        <div className="max-w-[1200px] mx-auto grid lg:grid-cols-[420px_1fr] gap-8 items-stretch">
+          <div className="bg-[#FFF0F5] text-[#2B0A1A] rounded-2xl p-8">
+            <h2 className="text-[28px] font-semibold">Contáctanos</h2>
+            <p className="mt-1 text-[16px] text-[#6B4A5A]">Reserva con anticipación por DM o WhatsApp.</p>
+            <h3 className="mt-6 text-[16px] font-bold tracking-wide flex items-center gap-2"><Clock size={16} /> Horarios de atención</h3>
+            <p className="mt-1 text-[16px]">Lunes a sábado · con cita previa</p>
+            <h3 className="mt-6 text-[16px] font-bold tracking-wide">Visítanos en Quito</h3>
+            <address className="not-italic mt-1 text-[16px] leading-relaxed">
+              Jaime Albuja y Av. Real Audiencia<br />Quito, Ecuador
+            </address>
+            <div className="mt-4 text-[16px] space-y-1.5 tabular-nums">
+              <p className="flex items-center gap-2"><Phone size={16} /> 099 990 0970 · 099 804 6299</p>
+              <p className="flex items-center gap-2"><AtSign size={16} /> @glowupspaquito</p>
+              <p className="flex items-center gap-2"><Mail size={16} /> glow.up.spa1@gmail.com</p>
+              <p className="flex items-center gap-2"><MapPin size={16} /> {HOURS}</p>
+            </div>
+            <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="mt-6 flex items-center justify-center gap-2 bg-[#AD1457] hover:bg-[#8E0E47] text-white h-[52px] rounded-full font-semibold transition-colors">
+              <MessageCircle size={18} /> Agenda tu cita hoy
+            </a>
+          </div>
+          <div className="min-w-0 flex flex-col">
+            <div className="rounded-2xl overflow-hidden bg-white/5 border border-white/10 flex-1 min-h-[380px]">
+              <iframe
+                title={`Ubicación Glow Up SPA — ${ADDRESS}`}
+                src={`https://www.google.com/maps?q=${MAPS_QUERY}&z=17&output=embed`}
+                className="w-full h-full min-h-[380px] border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-[15px] text-white/85">
+              <span className="inline-flex items-center gap-2"><MapPin size={16} /> {ADDRESS}</span>
+              <a href={`https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-white font-semibold hover:underline">
+                Cómo llegar <ArrowRight size={16} />
+              </a>
+            </div>
+          </div>
         </div>
-        <a href={WA} target="_blank" rel="noreferrer" className="mt-6 flex items-center justify-center bg-[#AD1457] hover:bg-[#8E0E47] text-white h-[52px] rounded-full font-semibold transition-colors">
-          Agenda tu cita hoy
-        </a>
-      </div>
-      <div className="bg-[#2B0A1A] text-white px-6 pt-14 pb-8">
-        <p className="font-display text-center leading-none" style={{ fontSize: 'clamp(60px,12vw,180px)' }}>Glow Up</p>
-        <div className="max-w-[1200px] mx-auto mt-8 flex flex-col md:flex-row gap-3 items-center justify-between text-[16px] opacity-80">
-          <span>SPA · Make Up · Boutique — Resaltamos tu belleza</span>
-          <span>Regálale a tu piel la tranquilidad que se merece.</span>
+      </section>
+      <footer className="bg-[#1E0713] text-white px-6 pt-14 pb-8">
+        <div className="max-w-[1200px] mx-auto">
+          <p className="font-display text-center leading-none" style={{ fontSize: 'clamp(56px,10vw,150px)' }}>Glow Up</p>
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-[15px]">
+            <div>
+              <div className="flex items-center gap-3">
+                <img src="/logo.jpg" alt="Glow Up SPA" className="h-10 w-10 rounded-full object-cover" width={40} height={40} />
+                <p className="font-semibold">Glow Up SPA · Boutique</p>
+              </div>
+              <p className="mt-3 text-white/70 leading-relaxed">Resaltamos tu belleza. Faciales, láser diodo, corporales y mirada en Quito.</p>
+              <p className="mt-3 text-white/70 inline-flex items-center gap-2"><AtSign size={15} /> @glowupspaquito</p>
+            </div>
+            <div>
+              <p className="font-bold tracking-wide text-[14px] uppercase text-white/60">Explora</p>
+              <ul className="mt-3 space-y-2">
+                <li><a href="#inicio" className="hover:underline">Inicio</a></li>
+                <li><a href="#categorias" className="hover:underline">Categorías</a></li>
+                <li><a href="#servicios" className="hover:underline">Servicios</a></li>
+                <li><a href="#promociones" className="hover:underline">Promociones</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold tracking-wide text-[14px] uppercase text-white/60">Contacto</p>
+              <ul className="mt-3 space-y-2 text-white/85">
+                <li className="flex items-center gap-2"><Phone size={15} /> {PHONES}</li>
+                <li className="flex items-center gap-2"><Mail size={15} /> glow.up.spa1@gmail.com</li>
+                <li className="flex items-start gap-2"><MapPin size={15} className="mt-0.5 shrink-0" /> {ADDRESS}</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold tracking-wide text-[14px] uppercase text-white/60">Agenda</p>
+              <p className="mt-3 text-white/70">{HOURS}. Promociones del 3 al 20 de octubre.</p>
+              <a href={WA_GENERAL} target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 bg-[#AD1457] hover:bg-[#8E0E47] text-white px-5 py-2.5 rounded-full font-semibold text-[14.5px]">
+                <MessageCircle size={16} /> Reservar por WhatsApp
+              </a>
+            </div>
+          </div>
+          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-2 items-center justify-between text-[13.5px] text-white/60">
+            <span>© 2026 Glow Up SPA · Quito, Ecuador. Todos los derechos reservados.</span>
+            <span>Del 3 al 20 de octubre · con cita previa</span>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }

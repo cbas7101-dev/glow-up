@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Navbar, Hero, Categories, Fiesta, ServicesMenu, Proof, Steps, Promos, ContactFooter } from './glow';
+import { Navbar, Hero, Categories, ServicesMenu, Steps, Promos, ContactFooter } from './glow';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,9 +46,7 @@ export default function GlowUpExperience() {
       <main>
         <Hero />
         <Categories />
-        <Fiesta />
         <ServicesMenu />
-        <Proof />
         <Steps />
         <Promos />
       </main>
